@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Homework JavaScript Chapter 8</title>
+        <!-- Required meta tags -->
+        <meta charset="utf-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, shrink-to-fit=no"
+        />
+
+        <!-- Bootstrap CSS v5.2.1 -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+            crossorigin="anonymous"
+        />
+        <!-- FontAwesome 6.2.0 CSS -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+            integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+    </head>
+
+    <body>
+        <section>
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-md-6">
+                        <h1 class="text-center">Bài tập JS buổi 8</h1>
+                        <form action="" method="post" id="formInput">
+                            <div class="mb-3">
+                                <div class="mb-3">
+                                    <label for="" class="form-label bg-success"
+                                        >Nhập số n</label
+                                    >
+                                    <input
+                                        type="text"
+                                        class="form-control"
+                                        name=""
+                                        id="soN"
+                                        aria-describedby="helpId"
+                                        placeholder="nhập số n"
+                                    />
+                                </div>
+                            </div>
+                            <button
+                                type="button"
+                                id="addSo"
+                                class="btn btn-outline-danger"
+                            >
+                                Thêm
+                            </button>
+                        </form>
+                        <div>
+                            <input
+                                class="alert alert-warning w-100 mt-3"
+                                id="mangSo"
+                            />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="container">
+                <div class="row">
+                    <div class="offset-3 col-md-6 offset-3">
+                        <div class="input-group mt-4">
+                            <button class="btn btn-outline-primary">
+                                Tổng số dương:
+                            </button>
+                            <input
+                                type="text"
+                                id="sumSoDuong"
+                                class="form-control border-primary"
+                            />
+                        </div>
+
+                        <div class="text-center">
+                            <button
+                                class="btn btn-info mt-2 sumPositive"
+                                id="tinhTong"
+                            >
+                                Tính tổng
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-md-6">
+                        <div class="input-group mt-4">
+                            <button class="btn btn-outline-danger">
+                                Số dương:
+                            </button>
+                            <input
+                                type="text"
+                                id="demSoDuong"
+                                class="form-control border-danger"
+                            />
+                        </div>
+                        <div class="text-center">
+                            <button
+                                class="btn btn-info mt-2 sumPositive"
+                                id="demDuong"
+                            >
+                                Đếm số dương
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-md-6">
+                        <div class="input-group mt-4">
+                            <button class="btn btn-outline-warning">
+                                Số nhỏ nhất:
+                            </button>
+                            <input
+                                type="text"
+                                id="minNumber"
+                                class="form-control border-warning"
+                            />
+                        </div>
+                        <div class="text-center">
+                            <button class="btn btn-info mt-2" id="btnMin">
+                                Số nhỏ nhất
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-md-6">
+                        <div class="input-group mt-4">
+                            <button class="btn btn-outline-success">
+                                Số dương nhỏ nhất:
+                            </button>
+                            <input
+                                type="text"
+                                id="minPositiveNumber"
+                                class="form-control border-success"
+                            />
+                        </div>
+                        <div class="text-center">
+                            <button
+                                class="btn btn-info mt-2"
+                                id="btnMinPositive"
+                            >
+                                Số dương nhỏ nhất
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-md-6">
+                        <div class="input-group mt-4">
+                            <button class="btn btn-outline-primary">
+                                Số chẵn cuối cùng:
+                            </button>
+                            <input
+                                type="text"
+                                id="eventNumberLast"
+                                class="form-control border-primary"
+                            />
+                        </div>
+                        <div class="text-center">
+                            <button
+                                class="btn btn-info mt-2"
+                                id="btnEvenNumberLast"
+                            >
+                                Tìm số chẵn
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-md-6">
+                        <div class="input-group mt-4">
+                            <button class="btn btn-danger">
+                                Nhập vị trí số đổi:
+                            </button>
+                            <input
+                                type="text"
+                                id="index1Number"
+                                class="form-control border-danger"
+                            />
+                        </div>
+                        <div class="input-group mt-4">
+                            <button class="btn btn-danger">
+                                Nhập vị trí muốn đổi:
+                            </button>
+                            <input
+                                type="text"
+                                id="index2Number"
+                                class="form-control border-danger"
+                            />
+                        </div>
+                        <div class="text-center">
+                            <button class="btn btn-info mt-2" id="btnSwap">
+                                Đổi vị trí
+                            </button>
+                        </div>
+                        <div>
+                            <input
+                                class="alert alert-warning w-100 mt-3"
+                                id="arrayAfterSwap"
+                            />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-md-6">
+                        <div class="input-group mt-4">
+                            <button class="btn btn-outline-warning">
+                                Sắp xếp tăng dần cho mảng:
+                            </button>
+                            <input
+                                type="text"
+                                id="sortArray"
+                                class="form-control border-warning"
+                            />
+                        </div>
+                        <div class="text-center">
+                            <button class="btn btn-info mt-2" id="btnSort">
+                                Sắp xếp
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-md-6">
+                        <div class="input-group mt-4">
+                            <button class="btn btn-outline-primary">
+                                Tìm số nguyên tố đầu tiên:
+                            </button>
+                            <input
+                                type="text"
+                                id="firstPrimeNumber"
+                                class="form-control border-primary"
+                            />
+                        </div>
+                        <div class="text-center">
+                            <button class="btn btn-info mt-2" id="btnPrime">
+                                Tìm nguyên tố đầu tiên
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-md-6">
+                        <div class="input-group mt-4">
+                            <button class="btn btn-outline-success">
+                                Đếm số nguyên:
+                            </button>
+                            <input
+                                type="text"
+                                id="countInteger"
+                                class="form-control border-success"
+                            />
+                        </div>
+                        <div class="text-center">
+                            <button
+                                class="btn btn-info mt-2"
+                                id="btnCountInteger"
+                            >
+                                Đếm số nguyên
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-md-6">
+                        <div class="input-group mt-4">
+                            <button class="btn btn-outline-primary">
+                                So sánh số dương & số âm:
+                            </button>
+                            <input
+                                type="text"
+                                id="comparePositiveNegative"
+                                class="form-control border-primary"
+                            />
+                        </div>
+                        <div class="text-center">
+                            <button class="btn btn-info mt-2" id="btnCompare">
+                                So sánh
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Bootstrap JavaScript Libraries -->
+        <script
+            src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+            integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+            crossorigin="anonymous"
+        ></script>
+
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+            integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+            crossorigin="anonymous"
+        ></script>
+        <script src="./main.js"></script>
+    </body>
+</html>
