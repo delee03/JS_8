@@ -12,6 +12,11 @@ document.getElementById("addSo").onclick = function () {
     inputValue.value = arrSo;
     //in ra các giá trị arr trong input
     console.log(inputValue.value);
+
+    document.getElementById("mangSo").style.borderColor = "#ccc";
+    document.getElementById("mangSo").style.borderWidth = "1px";
+    document.getElementById("mangSo").style.borderStyle = "solid";
+    document.getElementById("mangSo").classList.add("bg-warning");
 };
 
 //1. Tính tổng các số dương trong mảng:
@@ -122,6 +127,10 @@ document.getElementById("btnSwap").onclick = function () {
         index2 +
         " : " +
         arrSo;
+    document.getElementById("arrayAfterSwap").style.borderColor = "#ccc";
+    document.getElementById("arrayAfterSwap").style.borderWidth = "1px";
+    document.getElementById("arrayAfterSwap").style.borderStyle = "solid";
+    document.getElementById("arrayAfterSwap").classList.add("bg-warning");
 };
 //7.Sort ascessding for array
 function sortArrayAscending(array) {
